@@ -1,0 +1,165 @@
+section {
+    .container {
+        max-width: 1320px;
+        padding: 0 12px;
+        margin: 0 auto;
+    }
+
+    .imgContainer {
+        background-image: url("https://raw.githubusercontent.com/hexschool/2022-web-layout-training/refs/heads/main/2025-week1/hero.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        text-align: center;
+        margin-bottom: 64px;
+
+        div {
+            padding: 151px 0;
+
+            h1,
+            h3 {
+                color: white;
+            }
+
+            h1 {
+                font-weight: 700;
+                font-size: 40px;
+            }
+
+            h3 {
+                font-size: 28px;
+            }
+        }
+    }
+
+    .slogan {
+
+        text-align: center;
+        max-width: 880px;
+        padding: 0 12px;
+        margin: 0 auto;
+
+        div {
+            background-color: #F5FEE7;
+            padding: 32px 0;
+        }
+
+        h3 {
+            color: #57A203;
+            margin-bottom: 12px;
+        }
+    }
+}
+
+.summary {
+    max-width: 1076px;
+    margin: 48px auto;
+
+    @media (max-width:768px) {
+        padding: 0 12px;
+    }
+
+    .container {
+        max-width: 856px;
+        margin: 0 auto;
+        padding-bottom: 32px;
+        border-bottom: 1px solid #DEE2E6;
+
+    }
+
+    h2 {
+        font-size: 24px;
+        margin: 24px 0;
+    }
+
+    h3 {
+        color: #57A203;
+        margin-bottom: 16px;
+    }
+
+    p {
+        margin-bottom: 16px;
+    }
+}
+
+.history,
+.idea,
+.story {
+
+    .container {
+        max-width: 856px;
+        margin: 0 auto;
+        padding-bottom: 48px;
+        border-bottom: 1px solid #DEE2E6;
+
+        h2 {
+            font-size: 24px;
+            margin-bottom: 24px;
+        }
+    }
+}
+
+.history {
+    margin-bottom: 48px;
+
+    ul {
+        li {
+            list-style: disc;
+            margin-left: 15px;
+
+            .year {
+                padding-right: 8px;
+            }
+
+            span+span::before {
+                content: "";
+                border-left: 2px solid black;
+                padding: 0 4px;
+            }
+
+        }
+
+        li:nth-of-type(2) {
+            margin-top: 12px;
+            margin-bottom: 12px;
+        }
+    }
+}
+
+.idea {
+    margin-bottom: 48px;
+
+    li:nth-of-type(2) {
+        margin-top: 12px;
+        margin-bottom: 12px;
+    }
+
+    li {
+        padding-left: 12px;
+        border-left: 3px solid #DEE2E6;
+        line-height: 1.5;
+    }
+}
+
+.story {
+    ul {
+        li:nth-of-type(2) {
+            margin-top: 12px;
+            margin-bottom: 12px;
+        }
+
+        li {
+            a {
+                line-height: 1.5;
+                text-decoration: underline;
+                text-underline-offset: 4px;
+                color: #57A203;
+            }
+            i {
+                margin-right: 4px;
+            }
+
+        }
+
+    }
+
+}

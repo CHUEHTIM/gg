@@ -1,0 +1,43 @@
+@import './reset.css';
+@import './layout/header';
+@import './layout/footer.scss';
+@import './pages/index.scss';
+@import './pages/productList.scss';
+@import './pages/story.scss';
+
+:root {
+    --darkgray-fontColor: #6C757D;
+    --green-fontColor: #57A203;
+}
+
+a {
+    display: block;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.splace-b {
+    justify-content: space-between;
+}
+
+
+.align-items-center {
+    align-items: center;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+.col-2{
+    width: calc(100%/12*2);
+}
+.col-10 {
+    width: calc(100%/12*10);
+}
+
+.col-4 {
+    width: calc(100%/12*4);
+}
