@@ -1,0 +1,16 @@
+@mixin mb {
+    @media(max-width:768px) {
+        @content;
+    }
+}
+
+$font-white: white;
+$font-primary: #57A203;
+$font-gray:#6C757D;
+
+$bg-primary: #E8FEC5;
+$bg-green:#C0FA73;
+$bg-secondary:#F5FEE7;
+$color-gray:#DEE2E6;
+$color-dark-gray:#6C757D;
+

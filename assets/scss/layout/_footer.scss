@@ -1,78 +1,10 @@
-.joinMember {
-  background-color: #E8FEC5;
-  margin-top: 48px;
-
-  .container {
-    max-width: 1320px;
-    margin: 0 auto;
-  }
-
-  div.pd-24px {
-    justify-content: center;
-    align-items: center;
-    padding: 24px 12px;
-    gap: 24px;
-  }
-
-  h4{
-    font-size: 24px;
-  }
-
-  a {
+.btn-black{
     padding: 12px 24px;
-    background-color: #212529;
-    border-radius: 5px;
-    color: white;
-  }
+    background-color: black;
+    border-radius: 5%;
+    color:white;
 }
 
-footer {
-  margin: 64px 0;
-
-  a {
-    padding: 12px 0;
-  }
-
-  a[href='index.html'] {
-    margin-left: -11px;
-    padding: 8px 0;
-  }
-
-  @media (max-width:768px) {
-
-    margin: 32px 0;
-
-  }
-
-  .d-flex {
-    @media (max-width:768px) {
-
-      flex-direction: column;
-
-    }
-
-  }
-
-  .container {
-    max-width: 1320px;
-    margin: 0 auto;
-    padding: 0 12px;
-  }
-
-  .link {
-    margin-bottom: 24px;
-
-    ul {
-      width: 174px;
-    }
-  }
-
-  .copyRight {
-    text-align: center;
-    padding-top: 32px;
-    border-top: 1px solid #DEE2E6;
-    p{
-      color:var(--darkgray-color);
-    }
-  }
+.mg-r-24px{
+    margin-right: 24px;
 }

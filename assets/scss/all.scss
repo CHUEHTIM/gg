@@ -1,54 +1,9 @@
+@import './varilablue.scss';
+@import './utilities.scss';
 @import './reset.css';
-
-:root {
-    --darkgray-fontColor: #6C757D;
-    --green-fontColor: #57A203;
-}
-
-a {
-    display: block;
-}
-
-.d-flex {
-    display: flex;
-}
-
-.d-none {
-    display: none;
-}
-
-.splace-b {
-    justify-content: space-between;
-}
-
-
-.align-items-center {
-    align-items: center;
-}
-
-.row {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.col-2 {
-    width: calc(100%/12*2);
-}
-
-.col-10 {
-    width: calc(100%/12*10);
-}
-
-.col-4 {
-    width: calc(100%/12*4);
-}
-
-.col-6{
-    width: 50%;
-}
-
 @import './layout/header';
 @import './layout/footer.scss';
 @import './pages/index.scss';
 @import './pages/productList.scss';
 @import './pages/story.scss';
+
