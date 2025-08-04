@@ -1,0 +1,277 @@
+.index {
+    .d-pc-none {
+        display: none;
+    }
+
+    .d-mb-flex {
+        @include mb {
+            display: flex;
+        }
+    }
+
+    .w-50 {
+        width: 50%;
+        text-align: center;
+    }
+
+    .bg-green {
+        background-color: $bg-primary;
+    }
+
+    .bg-light-green {
+        background-color: $bg-secondary;
+    }
+
+    .bg-img {
+        background-image: url("https://raw.githubusercontent.com/hexschool/2022-web-layout-training/refs/heads/main/2025-week3-4/banner.png");
+
+        height: 800px;
+        background-size: cover;
+        background-position: center;
+        position: relative;
+
+        @include mb {
+            background-image: url("https://raw.githubusercontent.com/hexschool/2022-web-layout-training/refs/heads/main/2025-week3-4/banner-sm.png");
+            height: 480px;
+        }
+    }
+
+    .ft-64px {
+        font-size: 64px;
+    }
+
+    .btn {
+        padding: 12px 0;
+        background-color: $bg-green;
+        width: 115px;
+        text-align: center;
+        border-radius: 5px;
+    }
+
+    .center {
+        position: absolute;
+        top: 50%;
+        left: 10%;
+        transform: translateY(-50%);
+
+        @include mb {
+            left: 5%;
+        }
+    }
+
+    .ft-mb-48px {
+        @include mb {
+            font-size: 48px;
+        }
+    }
+
+    .ft-mb-20px {
+        @include mb {
+            font-size: 20px;
+        }
+    }
+
+    .col-6 {
+        margin-bottom: 40px;
+
+        @include mb {
+            padding-left: 6px;
+            padding-right: 6px;
+            margin-bottom: 24px;
+        }
+    }
+
+    .row {
+        margin-bottom: -40px;
+
+        @include mb {
+            margin-left: -6px;
+            margin-right: -6px;
+            margin-bottom: 24px;
+        }
+    }
+
+    .mg-y-64px {
+        margin-top: 64px;
+        margin-bottom: 64px;
+    }
+
+    .hot {
+        a {
+            position: relative;
+        }
+
+        a::before {
+            content: "人氣 No.1";
+            position: absolute;
+            background-color: $bg-secondary;
+            padding: 8px 12px;
+            font-size: 14px;
+            color: $font-primary;
+        }
+
+        .col-3 {
+            @include mb {
+                min-width: 300px;
+            }
+
+        }
+
+
+    }
+
+    .overflow-auto {
+
+        overflow-x: auto;
+        margin-left: -12px;
+        margin-right: -12px;
+
+    }
+
+    .bg-img-cool {
+        background-image: url("https://raw.githubusercontent.com/hexschool/2022-web-layout-training/refs/heads/main/2025-week3-4/banner-co-branded.png");
+        height: 470px;
+        background-position: 10%;
+        background-size: cover;
+        position: relative;
+        overflow: hidden;
+
+        @include mb {
+            background-image: url("https://raw.githubusercontent.com/hexschool/2022-web-layout-training/refs/heads/main/2025-week3-4/banner-co-branded-sm.png");
+        }
+
+        .h-100 {
+            height: 100%;
+        }
+
+        .font-green {
+            color: $font-green;
+            padding: 0 24px;
+
+            @include mb {
+                text-align: center;
+                padding: 0;
+            }
+        }
+
+        .font-dark-gray {
+            color: $color-dark-gray;
+        }
+
+        .flex-pc-dir-column {
+            flex-direction: column;
+        }
+
+        .d-mb-block {
+            @include mb {
+                display: block;
+            }
+        }
+
+        .p-absolute {
+            position: absolute;
+        }
+
+        .banner {
+            position: relative;
+        }
+
+        .star {
+            top: 68px;
+            left: calc(50% - 331px);
+
+            @include mb {
+                left: calc(50% - 170px);
+                top: 32px;
+            }
+        }
+
+
+        .lineThree {
+            bottom: 132px;
+            right: calc(50% - 300px);
+
+            @include mb {
+                bottom: 70px;
+
+            }
+        }
+
+    }
+}
+
+.card {
+    position: relative;
+
+    @include mb {
+        margin-bottom: 12px;
+    }
+
+}
+
+.img::after {
+    content: "";
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.text {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    font-size: 1rem;
+
+}
+
+.idea-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -4px;
+
+    @include mb {
+        flex-wrap: nowrap;
+        margin: 0 -8px;
+
+        img {
+            min-width: 300px;
+        }
+    }
+
+}
+
+.idea-col-12 {
+    width: 100%;
+    padding: 4px;
+}
+
+.idea-col-6 {
+    width: calc(100%/12*6);
+    padding: 4px;
+}
+
+.idea-col-4 {
+    width: calc(100%/12*4);
+    padding: 4px;
+}
+
+.idea-overflow {
+    @include mb {
+        overflow-x: auto;
+    }
+}
+
+.idea-col-12,
+.idea-col-6,
+.idea-col-4 {
+    @include mb {
+        width: unset;
+        padding: 8px;
+    }
+}

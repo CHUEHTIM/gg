@@ -3,13 +3,13 @@
         background-image: url("https://raw.githubusercontent.com/hexschool/2022-web-layout-training/refs/heads/main/2025-week1/hero.png");
         background-position: center;
 
+        @include mb {
+            background-image: url("https://raw.githubusercontent.com/hexschool/2022-web-layout-training/refs/heads/main/2025-week3-4/hero-sm.png");
+            background-size: cover;
+        }
+
     }
 
- 
-
-    .font-color-white {
-        color: $font-white;
-    }
 
     .pd-y-151px {
         padding-bottom: 151px;
@@ -50,37 +50,45 @@
     }
 
 
-
-
-    .mg-mb-b-12px{
-        @include mb{
+    .mg-mb-b-12px {
+        @include mb {
             margin-bottom: 12px;
         }
     }
-    .listStyle-disc{
+
+    .mg-mb-b-32px {
+        @include mb {
+            margin-bottom: 32px;
+        }
+    }
+
+    .listStyle-disc {
         list-style: disc;
     }
 
-    .pd-l-30px{
+    .pd-l-30px {
         padding-left: 30px;
     }
-    .border-r{
-        border-right:1px solid #212529;
+
+    .border-r {
+        border-right: 1px solid #212529;
         padding-right: 8px;
         margin-right: 8px;
     }
-    .border-l-gray{
-        border-left:3px solid $color-gray;
+
+    .border-l-gray {
+        border-left: 3px solid $color-gray;
     }
 
-    .pd-l-12px{
+    .pd-l-12px {
         padding-left: 12px;
     }
-    .pd-l-8px{
+
+    .pd-l-8px {
         padding-left: 8px;
     }
 
-    .font-hover:hover{
+    .font-hover:hover {
         color: darken($font-primary, 5%);
     }
 }
